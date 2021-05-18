@@ -29,6 +29,7 @@ function MyApp({ Component, pageProps }) {
             how={15}
             time={75}
             size={'500px'}
+            background={'palettedvioletred'}
           />
         </Box>
         <Component {...pageProps} />
