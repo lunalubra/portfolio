@@ -59,6 +59,7 @@ export default function ProjectCard(props) {
           </Text>
           <Heading
             py={2}
+            color={'gray.900'}
             fontSize={'2xl'}
             fontFamily={'body'}
             fontWeight="semibold"

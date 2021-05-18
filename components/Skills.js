@@ -27,7 +27,9 @@ const Feature = ({ text, icon, iconBg }) => {
       >
         {icon}
       </Flex>
-      <Text fontWeight={600}>{text}</Text>
+      <Text color={'gray.900'} fontWeight={600}>
+        {text}
+      </Text>
     </Stack>
   );
 };
@@ -38,7 +40,9 @@ export default function Skills() {
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
         <Stack spacing={4}>
           <Badge>Skills</Badge>
-          <Heading>Technologies I'm comfortable with</Heading>
+          <Heading color={'gray.900'}>
+            Technologies I'm comfortable with
+          </Heading>
           <Text color={'gray.500'} fontSize={'lg'}>
             Im familiarized with scrum/agile methodology. Besides the
             technologies named in the right, im currently learning:

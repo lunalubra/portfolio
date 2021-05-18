@@ -34,7 +34,9 @@ const Hobbie = ({ bgColor, color, icon, title, description }) => {
         <Icon color={color} as={icon} />
       </Flex>
       <VStack align={'start'}>
-        <Text fontWeight={600}>{title}</Text>
+        <Text color={'gray.900'} fontWeight={600}>
+          {title}
+        </Text>
         <Text color={'gray.600'}>{description}</Text>
       </VStack>
     </HStack>
@@ -46,7 +48,9 @@ export default function Hobbies() {
     <Box my="96px" p={4}>
       <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
         <Badge>Hobbies</Badge>
-        <Heading fontSize={'3xl'}>What i like to do in my free time!</Heading>
+        <Heading color={'gray.900'} fontSize={'3xl'}>
+          What i like to do in my free time!
+        </Heading>
         <Text color={'gray.600'} fontSize={'xl'}>
           Althoug i love coding, i also think is important to have hobbies to
           help your self go out the routine and clear your mind. Some of them
