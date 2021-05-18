@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <ChakraProvider resetCSS theme={theme}>
-      <Box bg="white" overflowX="hidden">
+      <Box position="relative" bg="white" overflowX="hidden">
         <Box position="sticky" zIndex="3">
           <Navbar />
         </Box>
