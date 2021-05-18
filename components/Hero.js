@@ -117,6 +117,7 @@ export default function Hero() {
                 top={'70px'}
               />
               <Text
+                color="gray.900"
                 fontSize={'lg'}
                 fontFamily={'Caveat'}
                 position={'absolute'}

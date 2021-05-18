@@ -3,7 +3,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html style={{ overflowX: 'hidden' }}>
         <Head>
           <link rel="shorcut icon" href="/logo.png" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -16,7 +16,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body style={{ overflowX: 'hidden' }}>
+        <body>
           <Main />
           <NextScript />
         </body>
