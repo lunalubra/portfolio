@@ -16,23 +16,25 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <ChakraProvider resetCSS theme={theme}>
-      <Navbar />
-      <Box position="relative" overflowX="hidden">
-        <Box w="100vw" h={height} position="absolute">
-          <Sky
-            images={{
-              0: '/gradient_1.png',
-              1: '/gradient_2.png',
-              2: '/gradient_3.png',
-              3: '/gradient_4.png'
-            }}
-            how={15}
-            time={75}
-            size={'500px'}
-            background={'#fff'}
-          />
+      <Box bg="white">
+        <Navbar />
+        <Box position="relative" overflowX="hidden">
+          <Box w="100vw" h={height} position="absolute">
+            <Sky
+              images={{
+                0: '/gradient_1.png',
+                1: '/gradient_2.png',
+                2: '/gradient_3.png',
+                3: '/gradient_4.png'
+              }}
+              how={15}
+              time={75}
+              size={'500px'}
+              background={'#fff'}
+            />
+          </Box>
+          <Component {...pageProps} />
         </Box>
-        <Component {...pageProps} />
       </Box>
     </ChakraProvider>
   );
