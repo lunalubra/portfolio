@@ -17,8 +17,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider resetCSS theme={theme}>
       <Navbar />
-      <Box bg="white" position="relative" overflowX="hidden">
-        <Box bg="white" w="100vw" h={height} position="absolute">
+      <Box position="relative" overflowX="hidden">
+        <Box w="100vw" h={height} position="absolute">
           <Sky
             images={{
               0: '/gradient_1.png',
