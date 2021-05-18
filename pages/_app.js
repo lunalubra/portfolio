@@ -17,7 +17,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider resetCSS theme={theme}>
       <Box bg="white" overflowX="hidden">
-        <Navbar />
+        <Box zIndex="3">
+          <Navbar />
+        </Box>
         <Box position="relative">
           <Box w="100vw" h={height} position="absolute" zIndex="1">
             <Sky
