@@ -1,12 +1,4 @@
-import {
-  Box,
-  Center,
-  useColorModeValue,
-  Heading,
-  Text,
-  Stack,
-  Image
-} from '@chakra-ui/react';
+import { Box, Center, Heading, Text, Stack, Image } from '@chakra-ui/react';
 
 import ProjectModal from './ProjectModal';
 
@@ -19,7 +11,7 @@ export default function ProjectCard(props) {
         p={6}
         maxW={'330px'}
         w={'full'}
-        bg={useColorModeValue('white', 'gray.800')}
+        bg={'white'}
         boxShadow={'2xl'}
         rounded={'lg'}
         pos={'relative'}

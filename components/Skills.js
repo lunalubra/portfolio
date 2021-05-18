@@ -6,15 +6,9 @@ import {
   Text,
   Stack,
   StackDivider,
-  Icon,
-  useColorModeValue
+  Icon
 } from '@chakra-ui/react';
 import { AiFillBug } from 'react-icons/ai';
-import {
-  IoAnalyticsSharp,
-  IoLogoBitcoin,
-  IoSearchSharp
-} from 'react-icons/io5';
 import { SiStorybook, SiTypescript } from 'react-icons/si';
 import Badge from './Badge';
 
@@ -51,25 +45,21 @@ export default function Skills() {
           </Text>
           <Stack
             spacing={4}
-            divider={
-              <StackDivider
-                borderColor={useColorModeValue('gray.100', 'gray.700')}
-              />
-            }
+            divider={<StackDivider borderColor={'gray.100'} />}
           >
             <Feature
               icon={<Icon as={SiTypescript} color={'yellow.500'} w={5} h={5} />}
-              iconBg={useColorModeValue('yellow.100', 'yellow.900')}
+              iconBg={'yellow.100'}
               text={'Typescript'}
             />
             <Feature
               icon={<Icon as={AiFillBug} color={'green.500'} w={5} h={5} />}
-              iconBg={useColorModeValue('green.100', 'green.900')}
+              iconBg={'green.100'}
               text={'TDD'}
             />
             <Feature
               icon={<Icon as={SiStorybook} color={'purple.500'} w={5} h={5} />}
-              iconBg={useColorModeValue('purple.100', 'purple.900')}
+              iconBg={'purple.100'}
               text={'Storyblocks'}
             />
           </Stack>

@@ -11,10 +11,8 @@ import {
   Flex,
   Icon,
   Badge,
-  Stack,
   Divider,
-  Link,
-  SimpleGrid
+  Link
 } from '@chakra-ui/react';
 import { Button } from '@chakra-ui/button';
 import Carousel from './Carousel';

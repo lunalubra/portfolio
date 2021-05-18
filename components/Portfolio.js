@@ -1,4 +1,4 @@
-import { Container, Flex, Grid, GridItem, Text } from '@chakra-ui/layout';
+import { Container, Flex, Grid, GridItem } from '@chakra-ui/layout';
 import React from 'react';
 import Badge from './Badge';
 import { FadeInBox } from './FadeInBox';
@@ -14,11 +14,11 @@ const Portfolio = () => {
         <Badge>Projects</Badge>
       </Flex>
       <Grid
-        templateRows={['repeat(5, 1fr)', 'repeat(5, 1fr)', 'repeat(2, 1fr)']}
-        templateColumns={['repeat(1, 1fr)', 'repeat(1, 1fr)', 'repeat(6, 1fr)']}
+        templateRows={['repeat(6, 1fr)', 'repeat(6, 1fr)', 'repeat(2, 1fr)']}
+        templateColumns={['repeat(1, 1fr)', 'repeat(1, 1fr)', 'repeat(3, 1fr)']}
         gap={4}
       >
-        <GridItem colSpan={[1, 1, 2]}>
+        <GridItem>
           <IntersectionObserver>
             <FadeInBox>
               <ProjectCard
@@ -69,7 +69,7 @@ const Portfolio = () => {
             </FadeInBox>
           </IntersectionObserver>
         </GridItem>
-        <GridItem colSpan={[1, 1, 2]}>
+        <GridItem>
           <IntersectionObserver>
             <FadeInBox>
               <ProjectCard
@@ -108,7 +108,7 @@ const Portfolio = () => {
             </FadeInBox>
           </IntersectionObserver>
         </GridItem>
-        <GridItem colSpan={[1, 1, 2]}>
+        <GridItem>
           <IntersectionObserver>
             <FadeInBox>
               <ProjectCard
@@ -152,11 +152,33 @@ const Portfolio = () => {
             </FadeInBox>
           </IntersectionObserver>
         </GridItem>
-        <GridItem
-          rowStart={[4, 4, 2]}
-          colSpan={[1, 1, 3]}
-          justifySelf={['', '', 'end']}
-        >
+        <GridItem>
+          <IntersectionObserver>
+            <FadeInBox>
+              <ProjectCard
+                title="Multiuser blogging plataform"
+                bgColor="blue.600"
+                subtitle="Using Next.js, Firebase and markdown"
+                description="This multiuser blogging plataform is a dev.to clone! Hope you like it and find it interesting! Its the result of compliting a fireship.io course! Go and have fun, register, like some post, write your own and play with the images and markdown!"
+                tags={[
+                  { color: 'blue', text: 'React' },
+                  { color: 'black', text: 'Next.js' },
+                  { color: 'pink', text: 'SCSS' },
+                  { color: 'purple', text: 'Markdown' },
+                  { color: 'orange', text: 'Firebase' }
+                ]}
+                githubLink="https://github.com/LunacTec/dev.to-clone"
+                webLink="https://dev-to-clone.vercel.app/"
+                mainMedia={'/dev-to-clone.png'}
+                media={[
+                  { type: 'video', data: '/dev-to-clone.mp4' },
+                  { type: 'image', data: '/dev-to-clone.png' }
+                ]}
+              />
+            </FadeInBox>
+          </IntersectionObserver>
+        </GridItem>
+        <GridItem>
           <IntersectionObserver>
             <FadeInBox>
               <ProjectCard
@@ -191,11 +213,7 @@ const Portfolio = () => {
             </FadeInBox>
           </IntersectionObserver>
         </GridItem>
-        <GridItem
-          rowStart={[5, 5, 2]}
-          colSpan={[1, 1, 3]}
-          justifySelf={['', '', 'start']}
-        >
+        <GridItem>
           <IntersectionObserver>
             <FadeInBox>
               <ProjectCard
