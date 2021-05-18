@@ -12,7 +12,6 @@ const NavLink = ({ children }) => (
     py={1}
     href={`#${children.toLowerCase()}`}
     rounded={'md'}
-    bg="gray.50"
     color="gray.900"
     _hover={{
       textDecoration: 'none',
