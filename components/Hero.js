@@ -92,7 +92,7 @@ export default function Hero() {
               as="a"
               px={6}
               href="mailto:lucas2002luna@gmail.com?subject=<Te%20contacto%20por%20...>"
-              colorScheme={'orange'}
+              color="white"
               bgGradient="linear(to-r, red.400,pink.400)"
               rounded={'full'}
               _hover={{
