@@ -12,6 +12,7 @@ import {
 import { AiFillGithub } from 'react-icons/ai';
 import { FaTwitter } from 'react-icons/fa';
 import { SiGmail, SiLinkedin } from 'react-icons/si';
+import { HiDocument } from 'react-icons/hi';
 
 const ContactModal = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -114,6 +115,24 @@ const ContactModal = () => {
                   Gmail
                 </Button>
               </Tooltip>
+              <Button
+                as="a"
+                maxW={'md'}
+                href="/LucasAcostaFrontendDeveloper.pdf"
+                target="_blank"
+                onClick={onClose}
+                colorScheme={'green'}
+                leftIcon={<HiDocument />}
+                _hover={{
+                  opacity: '0.9'
+                }}
+                _active={{
+                  opacity: '0.75',
+                  transform: 'scale(0.9)'
+                }}
+              >
+                Curriculum Vitae
+              </Button>
             </Stack>
           </ModalBody>
         </ModalContent>
