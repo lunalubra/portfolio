@@ -1,4 +1,5 @@
-import { Box, Center, Heading, Text, Stack, Image } from '@chakra-ui/react';
+import { Box, Center, Heading, Text, Stack } from '@chakra-ui/react';
+import Image from 'next/image';
 
 import ProjectModal from './ProjectModal';
 

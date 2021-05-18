@@ -18,9 +18,13 @@ export default function Home() {
           </Box>
         </FadeInBox>
       </IntersectionObserver>
-      <Box id="portfolio">
-        <Portfolio />
-      </Box>
+      <IntersectionObserver>
+        <FadeInBox>
+          <Box id="portfolio">
+            <Portfolio />
+          </Box>
+        </FadeInBox>
+      </IntersectionObserver>
       <IntersectionObserver>
         <FadeInBox>
           <Box

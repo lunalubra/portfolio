@@ -24,7 +24,7 @@ function MyApp({ Component, pageProps }) {
         <Navbar />
         <Box position="relative" bg="white">
           <Box position="relative">
-            <Box w="100vw" h={height} position="absolute" zIndex="1">
+            {/* <Box w="100vw" h={height} position="absolute" zIndex="1">
               <Sky
                 images={{
                   0: '/gradient_1.png',
@@ -37,7 +37,7 @@ function MyApp({ Component, pageProps }) {
                 size={'500px'}
                 background={'palettedvioletred'}
               />
-            </Box>
+            </Box> */}
             <Box position="relative" zIndex="2">
               <Component {...pageProps} />
             </Box>
