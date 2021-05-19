@@ -9,20 +9,11 @@ import {
   createIcon,
   Badge
 } from '@chakra-ui/react';
-import { useEffect, useState } from 'react';
 
 export default function Hero() {
-  const [height, setHeight] = useState(0);
-
-  useEffect(() => {
-    if (window) {
-      setHeight(window.innerHeight - 66);
-    }
-  }, []);
-
   return (
     <>
-      <Container maxW={'3xl'} h={`${height}px`}>
+      <Container maxW={'3xl'}>
         <Stack
           as={Box}
           textAlign={'center'}
