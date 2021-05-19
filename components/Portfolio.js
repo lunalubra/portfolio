@@ -56,7 +56,7 @@ const Portfolio = () => {
             webLink="http://167.172.189.39"
             mainMedia={'/floral_1.png'}
             media={[
-              { type: 'video', data: '/floral_5.webm' },
+              { type: 'video', data: '/floral_5.mp4' },
               { type: 'image', data: '/floral_1.png' },
               { type: 'image', data: '/floral_2.png' },
               { type: 'image', data: '/floral_3.png' }
